@@ -6,15 +6,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav class="flex justify-between">
+    <nav class="flex justify-between bg-blue-900 text-white py-5 text-xl">
         <div>
-            <p>Mon Logo</p>
+            <p class="ms-10 text-2xl font-bold"><a href="#">SchoolManager</a></p>
         </div>
        <ul class="flex items-center">
-        <li>Acceuil</li>
-        <li>A propos</li>
-        <li>Login</li>
-        <li>Contact</li>
+        <li class="px-5"><a href="#">Accueil</a></li>
+        <li class="px-5"><a href="#">Inscription</a></li>
+        <li class="px-5"><a href="#">Se connecter</a></li>
+        <li class="px-5"><a href="#">À propos</a></li>
+        <li class="px-5"><a href="#">Contact</a></li>
+        
        </ul>
     </nav>
     {% block body %}{% endblock  %}
