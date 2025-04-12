@@ -1,7 +1,38 @@
-{% extends "home/base.html" %}
-{% load static %}
-{% block body %}
-<div>
-    <img class="flex object-cover h-96 w-full" src="{% static 'image/header.jpg' %}" alt="image">
+{% extends "home/base.html" %} {% load static %} {% block body %}
+<div class="grid grid-cols-3 gap-4 bg-gray-300">
+  <div class="col-span-2 mt-32 ps-10 ">
+    <p class="my-4 uppercase ">
+      Bienvenue sur SchoolManager, votre plateforme complète de gestion
+      scolaire
+    </p>
+    <p class="my-4 uppercase ">La gestion scolaire simplifiée commence ici</p>
+    <p class="my-4 uppercase ">Centralisez, organisez et optimisez votre établissement scolaire</p>
+    
+  </div>
+  <div class="p-5 text-white">
+    <img
+      class="flex object-cover h-96 w-full"
+      src="{% static 'image/header.png' %}"
+      alt="image"
+
+    />
+  </div>
 </div>
-{% endblock  %}
+<div class="flex ms-56 mt-9 ">
+  <div class="grid px-8 text-center border bg-gray-300 mx-5 py-7">
+    <h3 class="text-blue-900 font-bold text-xl">Administration</h3>
+    <p class="text-lg">Gestion complete de l'ecole</p>
+  </div>
+  <div class="grid px-8 text-center border bg-gray-300 mx-5 py-7">
+    <h3 class="text-blue-900 font-bold text-xl">Enseignants</h3>
+    <p class="text-lg">Suivi des classes et notes</p>
+  </div>
+  <div class="grid px-8 text-center border bg-gray-300 mx-5 py-7">
+    <h3 class="text-blue-900 font-bold text-xl">Élèves</h3>
+    <p class="text-lg">Accès aux cours et résultats</p>
+  </div>
+</div>
+<div class="bg-blue-900 text-white text-center py-2 mt-6">
+  <p>@2025 SchoolManager - Tous droit réservés</p>
+</div>
+{% endblock %}
