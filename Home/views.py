@@ -10,3 +10,6 @@ def registration(request):
 
 def about(request):
     return render(request,'home/About.html')
+
+def contact(request):
+    return render(request,'home/contact.html')
